@@ -29,7 +29,19 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "loginpage",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                },
+                {
+                    "type": "registerpage",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "login": {
             "prototype": "ui/login.reel",
@@ -52,7 +64,7 @@
                     "root:login",
                     "root:register",
                     "root:home"
-                    ]
+                ]
             }
         },
         "subNav": {

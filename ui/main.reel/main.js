@@ -26,18 +26,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
 
-    handleHomeLoginpage: {
-        value: function (event) {
-            this.updatePath("/login");
-        }
-    },
-
-    handleHomeRegisterpage: {
-        value: function (event) {
-            this.updatePath("/register");
-        }
-    },
-
     handleRegisterSignup: {
         value: function (event) {
             this.updatePath("/login");
@@ -47,6 +35,18 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleLoginSignin: {
         value: function (event) {
             this.updatePath("/landing");
+        }
+    },
+
+    handleLandingLoginpage: {
+        value: function (event) {
+            this.updatePath("/login");
+        }
+    },
+
+    handleLandingRegisterpage: {
+        value: function (event) {
+            this.updatePath("/register");
         }
     }
 
