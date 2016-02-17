@@ -1,0 +1,1 @@
+var Component=require("montage/ui/component").Component,sharedAuthService=require("core/auth-service").shared;exports.Login=Component.specialize({constructor:{value:function(){this.super()}},handleButtonLoginAction:{value:function(){}}});

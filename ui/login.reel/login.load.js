@@ -1,0 +1,1 @@
+montageDefine("9021793","ui/login.reel/login",{dependencies:["montage/ui/component","core/auth-service"],factory:function(e,t){var n=e("montage/ui/component").Component;e("core/auth-service").shared,t.Login=n.specialize({constructor:{value:function(){this.super()}},handleButtonLoginAction:{value:function(){}}})}});

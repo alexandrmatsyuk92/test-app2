@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="register.css" />
+    <script type="text/montage-serialization">{"owner":{"properties":{"element":{"#":"owner"},"contenteditable":"true","dir":"ltr","draggable":"true"}},"buttonRegister":{"prototype":"digit/ui/button.reel","properties":{"element":{"#":"buttonRegister"},"contenteditable":"true","dir":"ltr","draggable":"true","enabled":true,"label":"Sign up"},"listeners":[{"type":"action","useCapture":false,"listener":{"@":"owner"}}]},"emailInput":{"prototype":"digit/ui/text-field.reel","properties":{"element":{"#":"emailInput"},"contenteditable":"true","dir":"ltr","draggable":"true","placeholderValue":"email"},"bindings":{"value":{"<->":"@owner.email"}}},"passwordconfInput":{"prototype":"digit/ui/text-field.reel","properties":{"element":{"#":"passwordconfInput"},"contenteditable":"true","dir":"ltr","draggable":"true","placeholderValue":"password confirmation"},"bindings":{"value":{"<->":"@owner.passwordConf"}}},"passwordInput":{"prototype":"digit/ui/text-field.reel","properties":{"element":{"#":"passwordInput"},"contenteditable":"true","dir":"ltr","draggable":"true","placeholderValue":"password"},"bindings":{"value":{"<->":"@owner.password"}}}}</script>
+</head>
+<body>
+    <div data-montage-id="owner" class="Register">
+        <div class="page-title">
+            Register page
+        </div>
+        <div class="page-form">
+            <div class="form-item">
+                <input data-montage-id="emailInput" />
+            </div>
+            <div class="form-item">
+                <input data-montage-id="passwordInput" />
+            </div>
+            <div class="form-item">
+                <input data-montage-id="passwordconfInput" />
+            </div>
+            <div class="form-item">
+                <button data-montage-id="buttonRegister"></button>
+            </div>
+        </div>
+    </div>
+
+</body></html>

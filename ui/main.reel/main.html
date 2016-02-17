@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8" />
+    <title>
+        Main
+    </title>
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/montage-serialization">{"owner":{"properties":{"element":{"#":"main"}}},"home":{"prototype":"ui/home.reel","properties":{"element":{"#":"home"},"contenteditable":"true","dir":"ltr","draggable":"true"}},"landing":{"prototype":"ui/landing.reel","properties":{"element":{"#":"landing"},"contenteditable":"true","dir":"ltr","draggable":"true"},"listeners":[{"type":"loginpage","useCapture":false,"listener":{"@":"owner"}},{"type":"registerpage","useCapture":false,"listener":{"@":"owner"}}]},"login":{"prototype":"ui/login.reel","properties":{"element":{"#":"login"},"contenteditable":"true","dir":"ltr","draggable":"true"},"listeners":[{"type":"signin","useCapture":false,"listener":{"@":"owner"}}]},"register":{"prototype":"ui/register.reel","properties":{"element":{"#":"register"}},"listeners":[{"type":"signup","useCapture":false,"listener":{"@":"owner"}}]},"router":{"prototype":"ui/router","properties":{"default":"home","routes":["root:landing","root:login","root:register","root:home"]}},"subNav":{"prototype":"montage/ui/substitution.reel","properties":{"element":{"#":"subNav"},"contenteditable":"true","dir":"ltr","draggable":"true"},"bindings":{"switchValue":{"<-":"@router.parts.get('root')"}}}}</script>
+</head>
+<body>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div data-montage-id="subNav">
+            <div data-arg="landing">
+                <div data-montage-id="landing" class="landing">
+                    signup
+                </div>
+            </div>
+            <div data-arg="home">
+                <div data-montage-id="home">
+                    home1
+                </div>
+            </div>
+            <div data-arg="register">
+                <div data-montage-id="register" class="register">
+                    signup
+                </div>
+            </div>
+            <div data-arg="login">
+                <div data-montage-id="login" class="login">
+                    login
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>
