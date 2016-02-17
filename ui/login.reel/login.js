@@ -3,7 +3,7 @@
  */
 var Component = require("montage/ui/component").Component;
 var sharedAuthService = require("core/auth-service").shared;
-var reqwest = require('reqwest');
+//var reqwest = require('reqwest');
 
 /**
  * @class Login
@@ -19,12 +19,10 @@ exports.Login = Component.specialize(/** @lends Login# */ {
     handleButtonLoginAction: {
         value: function (ev) {
             var _this = this;
-            reqwest({
+            /*reqwest({
                 url: 'http://test-login-server.herokuapp.com/login',
                 method: 'post',
                 crossOrigin: true,
-                /*contentType: 'application/json',
-                type: 'json',*/
                 data: { email: _this.email, password: _this.password },
                 success: function (resp) {
                     if(resp.success) {
@@ -41,7 +39,7 @@ exports.Login = Component.specialize(/** @lends Login# */ {
                 error: function(error) {
                     alert("Error !");
                 }
-            });
+            });*/
         }
     }
 
