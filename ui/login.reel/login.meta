@@ -1,0 +1,48 @@
+{
+  "blueprint_component_reference": {
+    "prototype": "montage/core/meta/blueprint-reference",
+    "properties": {
+      "valueReference": {
+        "blueprintName": "Component",
+        "blueprintModule": {
+          "%": "montage/ui/component.meta"
+        }
+      }
+    }
+  },
+  "blueprint_unnamed_password": {
+    "prototype": "montage/core/meta/property-blueprint",
+    "properties": {
+      "name": "password",
+      "blueprint": {"@": "root"}
+    }
+  },
+  "blueprint_unnamed_email": {
+    "prototype": "montage/core/meta/property-blueprint",
+    "properties": {
+      "name": "email",
+      "blueprint": {"@": "root"}
+    }
+  },
+  "root": {
+    "prototype": "montage/core/meta/module-blueprint",
+    "properties": {
+      "name": null,
+      "parent": {"@": "blueprint_component_reference"},
+      "propertyBlueprints": [
+        {"@": "blueprint_unnamed_password"},
+        {"@": "blueprint_unnamed_email"}
+      ],
+      "propertyBlueprintGroups": {
+        "Login": [
+          {"@": "blueprint_unnamed_password"},
+          {"@": "blueprint_unnamed_email"}
+        ]
+      },
+      "module": {
+        "%": "ui/login.reel"
+      },
+      "exportName": "Login"
+    }
+  }
+}

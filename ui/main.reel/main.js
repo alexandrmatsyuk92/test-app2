@@ -12,5 +12,42 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    
+    updatePath: {
+        value: function(path) {
+            this.templateObjects.router.updatePath(path);
+        }
+    },
+    
+    templateDidLoad: {
+        value: function() {
+            this.updatePath();
+        }
+    },
+
+    handleHomeLoginpage: {
+        value: function (event) {
+            this.updatePath("/login");
+        }
+    },
+
+    handleHomeRegisterpage: {
+        value: function (event) {
+            this.updatePath("/register");
+        }
+    },
+
+    handleRegisterSignup: {
+        value: function (event) {
+            this.updatePath("/login");
+        }
+    },
+
+    handleLoginSignin: {
+        value: function (event) {
+            this.updatePath("/landing");
+        }
     }
+
 });
