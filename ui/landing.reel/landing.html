@@ -7,14 +7,55 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "owner"}
+                "element": {"#": "owner"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
+        },
+        "buttonLogin": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "buttonLogin"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "label": "Button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "buttonRegister": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "buttonRegister"},
+                "enabled": true,
+                "label": "Button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Landing">
+        <div class="page-title">Landing page</div>
+        <div class="page-form">
+            <button data-montage-id="buttonLogin"></button>
+            <button data-montage-id="buttonRegister"></button>
+        </div>
     </div>
 </body>
 </html>
