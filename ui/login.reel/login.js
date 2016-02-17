@@ -4,6 +4,7 @@
 var Component = require("montage/ui/component").Component;
 var sharedAuthService = require("core/auth-service").shared;
 
+
 /**
  * @class Login
  * @extends Component
@@ -18,6 +19,7 @@ exports.Login = Component.specialize(/** @lends Login# */ {
     handleButtonLoginAction: {
         value: function (ev) {
             var _this = this;
+
         }
     }
 
